@@ -1,0 +1,6 @@
+<ol class="menu-list">
+  <li ng-repeat="item in $ctrl.items" 
+  ui-sref="menuList.itemDetail({itemId: $index})">
+    {{ item.quantity }} of {{ item.name }}
+  </li>
+</ol>
